@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Find A Job</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="login">Giriş yap</string>
+    <string name="dont_have_account">Bir hesabın yok mu?\nKayıt ol</string>
+    <string name="name">name</string>
+    <string name="signup">Kayıt ol</string>
+    <string name="already_have_account">Zaten bir hesabınız var mı?\nGiriş yap</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="empty" />
+    <string name="logout">logout</string>
+    <string name="search">Ara</string>
+    <string name="save">Kaydet</string>
+    <string name="ok">Tamam</string>
+    <string name="notifications">Bildirimler</string>
+    <string name="appointments">Randevular</string>
+</resources>
