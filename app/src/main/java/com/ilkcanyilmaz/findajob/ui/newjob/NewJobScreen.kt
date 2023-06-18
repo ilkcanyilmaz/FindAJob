@@ -127,7 +127,6 @@ fun NewJobScreen(
                         focusedBorderColor = MaterialTheme.colorScheme.secondary,
                         unfocusedBorderColor = MaterialTheme.colorScheme.onSurface
                     ),
-                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     label = { Text(text = "Konum", color = MaterialTheme.colorScheme.onSurface) },
                     onValueChange = {
                         location = it
