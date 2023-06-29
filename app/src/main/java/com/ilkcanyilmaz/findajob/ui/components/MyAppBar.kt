@@ -20,6 +20,7 @@ import com.ilkcanyilmaz.findajob.navigation.ROUTE_HOME
 import com.ilkcanyilmaz.findajob.ui.theme.AppTheme
 import com.ilkcanyilmaz.findajob.R
 import com.ilkcanyilmaz.findajob.navigation.ROUTE_LOGIN
+import com.ilkcanyilmaz.findajob.navigation.ROUTE_MAIN
 
 @SuppressLint("SuspiciousIndentation")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -35,7 +36,7 @@ fun MyAppBar(
             containerColor = MaterialTheme.colorScheme.onPrimary
         ),
         actions = {
-            if (navController?.currentBackStackEntry == navController?.getBackStackEntry(ROUTE_HOME)) {
+            if (navController?.currentBackStackEntry == navController?.getBackStackEntry(ROUTE_MAIN)) {
                 Icon(
                     modifier = Modifier.clickable(onClick = {
                         FirebaseAuth.getInstance().signOut()

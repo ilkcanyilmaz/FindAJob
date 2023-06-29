@@ -9,6 +9,7 @@ import androidx.navigation.compose.rememberNavController
 import com.ilkcanyilmaz.findajob.ui.auth.LoginScreen
 import com.ilkcanyilmaz.findajob.ui.auth.SignupScreen
 import com.ilkcanyilmaz.findajob.ui.home.HomeScreen
+import com.ilkcanyilmaz.findajob.ui.main.MainScreen
 import com.ilkcanyilmaz.findajob.ui.newjob.NewJobScreen
 
 @Composable
@@ -33,6 +34,9 @@ fun AppNavHost(
         }
         composable(ROUTE_NEW_JOB) {
             NewJobScreen(navController = navController)
+        }
+        composable(ROUTE_MAIN) {
+            MainScreen(navController = navController)
         }
     }
 }

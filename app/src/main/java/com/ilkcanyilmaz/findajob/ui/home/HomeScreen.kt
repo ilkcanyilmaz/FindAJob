@@ -24,7 +24,6 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.google.firebase.auth.FirebaseAuth
-import com.ilkcanyilmaz.findajob.navigation.ROUTE_HOME
 import com.ilkcanyilmaz.findajob.navigation.ROUTE_LOGIN
 import com.ilkcanyilmaz.findajob.navigation.ROUTE_NEW_JOB
 import com.ilkcanyilmaz.findajob.ui.components.ErrorPopup
@@ -59,8 +58,8 @@ fun HomeScreen(
 
             LaunchedEffect(Unit) {
                 viewModel?.getJobs()
-                FirebaseAuth.getInstance().addAuthStateListener {auth->
-                    if(auth.currentUser==null){
+                FirebaseAuth.getInstance().addAuthStateListener { auth ->
+                    if (auth.currentUser == null) {
                         navController.navigate(ROUTE_LOGIN)
                     }
                 }
@@ -82,7 +81,7 @@ fun HomeScreen(
                             .fillMaxHeight()
                             .fillMaxWidth()
                     ) {
-                        jobs?.value?.let {job->
+                        jobs?.value?.let { job ->
                             LazyColumn(
                                 modifier = Modifier.fillMaxSize()
                             ) {

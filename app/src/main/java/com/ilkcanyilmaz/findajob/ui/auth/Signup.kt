@@ -35,6 +35,7 @@ import com.ilkcanyilmaz.findajob.R
 import com.ilkcanyilmaz.findajob.data.Resource
 import com.ilkcanyilmaz.findajob.navigation.ROUTE_HOME
 import com.ilkcanyilmaz.findajob.navigation.ROUTE_LOGIN
+import com.ilkcanyilmaz.findajob.navigation.ROUTE_MAIN
 import com.ilkcanyilmaz.findajob.navigation.ROUTE_SIGNUP
 import com.ilkcanyilmaz.findajob.ui.theme.AppTheme
 import com.ilkcanyilmaz.findajob.ui.theme.spacing
@@ -226,8 +227,8 @@ fun SignupScreen(
 
                     is Resource.Success -> {
                         LaunchedEffect(Unit) {
-                            navController.navigate(ROUTE_HOME) {
-                                popUpTo(ROUTE_HOME) { inclusive = true }
+                            navController.navigate(ROUTE_MAIN) {
+                                popUpTo(ROUTE_MAIN) { inclusive = true }
                             }
                         }
                     }
